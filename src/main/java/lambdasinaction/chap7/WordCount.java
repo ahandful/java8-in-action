@@ -31,8 +31,8 @@ public class WordCount {
     }
 
     public static int countWords(String s) {
-        //Stream<Character> stream = IntStream.range(0, s.length())
-        //                                    .mapToObj(SENTENCE::charAt).parallel();
+//        Stream<Character> stream = IntStream.range(0, s.length())
+//                                            .mapToObj(SENTENCE::charAt).parallel();
         Spliterator<Character> spliterator = new WordCounterSpliterator(s);
         Stream<Character> stream = StreamSupport.stream(spliterator, true);
 

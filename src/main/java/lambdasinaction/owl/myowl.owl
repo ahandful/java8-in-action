@@ -1,0 +1,18 @@
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0045019">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negative regulation of nitric oxide biosynthetic process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0031327"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0045428"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1903427"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1904406"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any process that stops, prevents, or reduces the frequency, rate or extent of the chemical reactions and pathways resulting in the formation of nitric oxide.</obo:IAO_0000115>
+    <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0045019</oboInOwl:id>
+    <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</oboInOwl:hasOBONamespace>
+    <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">down regulation of nitric oxide biosynthetic process</oboInOwl:hasExactSynonym>
+    <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">down-regulation of nitric oxide biosynthetic process</oboInOwl:hasExactSynonym>
+    <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">downregulation of nitric oxide biosynthetic process</oboInOwl:hasExactSynonym>
+    <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inhibition of nitric oxide biosynthetic process</oboInOwl:hasNarrowSynonym>
+    <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negative regulation of nitric oxide anabolism</oboInOwl:hasExactSynonym>
+    <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negative regulation of nitric oxide biosynthesis</oboInOwl:hasExactSynonym>
+    <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negative regulation of nitric oxide formation</oboInOwl:hasExactSynonym>
+    <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negative regulation of nitric oxide synthesis</oboInOwl:hasExactSynonym>
+</owl:Class>

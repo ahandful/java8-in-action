@@ -17,7 +17,7 @@ public class PartitionPrimeNumbers {
 
     public static Map<Boolean, List<Integer>> partitionPrimes(int n) {
         return IntStream.rangeClosed(2, n).boxed()
-                .collect(partitioningBy(candidate -> isPrime(candidate)));
+                .collect(partitioningBy(PartitionPrimeNumbers::isPrime));
     }
 
     public static boolean isPrime(int candidate) {

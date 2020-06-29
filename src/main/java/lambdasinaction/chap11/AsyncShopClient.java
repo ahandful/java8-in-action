@@ -7,6 +7,7 @@ public class AsyncShopClient {
     public static void main(String[] args) {
         AsyncShop shop = new AsyncShop("BestShop");
         long start = System.nanoTime();
+        long l = System.currentTimeMillis();
         Future<Double> futurePrice = shop.getPrice("myPhone");
         long incocationTime = ((System.nanoTime() - start) / 1_000_000);
         System.out.println("Invocation returned after " + incocationTime + " msecs");

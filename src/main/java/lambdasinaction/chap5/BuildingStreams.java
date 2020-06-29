@@ -64,9 +64,9 @@ public class BuildingStreams {
                       return this.previous;
                   }
               };
-         IntStream.generate(fib).limit(10).forEach(System.out::println);
-
-         long uniqueWords = Files.lines(Paths.get("lambdasinaction/chap5/data.txt"), Charset.defaultCharset())
+        IntStream.generate(fib).limit(10).forEach(System.out::println);
+        Path path = Paths.get(BuildingStreams.class.getClassLoader().getResource("lambdasinaction/chap5/data.txt").toURI());
+        long uniqueWords = Files.lines(path, Charset.defaultCharset())
                                  .flatMap(line -> Arrays.stream(line.split(" ")))
                                  .distinct()
                                  .count();

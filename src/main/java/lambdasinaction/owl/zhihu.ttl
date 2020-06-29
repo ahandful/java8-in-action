@@ -1,0 +1,51 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://www.kg.com/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
+### 这里我们用词汇owl:Class定义了“人”和“地点”这两个类。
+:Person rdf:type owl:Class.
+:Place rdf:type owl:Class.
+:Author rdf:type owl:Class;
+	rdfs:label "Author";
+        rdfs:subClassOf :Person .
+### owl区分数据属性和对象属性（对象属性表示实体和实体之间的关系）。词汇owl:DatatypeProperty定义了数据属性，owl:ObjectProperty定义了对象属性。
+:chineseName rdf:type owl:DatatypeProperty;
+        rdfs:domain :Person;
+        rdfs:range xsd:string .
+
+:career rdf:type owl:DatatypeProperty;
+        rdfs:domain :Person;
+        rdfs:range xsd:string .
+
+:fullName rdf:type owl:DatatypeProperty;
+          rdfs:domain :Person;
+          rdfs:range xsd:string .
+
+:birthDate rdf:type owl:DatatypeProperty;
+           rdfs:domain :Person;
+           rdfs:range xsd:date .
+
+:height rdf:type owl:DatatypeProperty;
+        rdfs:domain :Person;
+        rdfs:range xsd:int .
+
+:weight rdf:type owl:DatatypeProperty;
+        rdfs:domain :Person;
+        rdfs:range xsd:int .
+
+:nationality rdf:type owl:DatatypeProperty;
+             rdfs:domain :Person;
+             rdfs:range xsd:string .
+
+:hasBirthPlace rdf:type owl:ObjectProperty;
+               rdfs:domain :Person;
+               rdfs:range :Place .
+
+:address rdf:type owl:DatatypeProperty;
+         rdfs:domain :Place;
+         rdfs:range xsd:string .
+
+:coordinate rdf:type owl:DatatypeProperty;
+            rdfs:domain :Place;
+            rdfs:range xsd:string .
