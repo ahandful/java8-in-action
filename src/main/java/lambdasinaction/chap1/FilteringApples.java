@@ -9,7 +9,6 @@ public class FilteringApples{
 
     public static void main(String ... args){
         System.out.println("这是panda的修改");
-        System.out.println("这是master后面的修改");
         List<Apple> inventory = Arrays.asList(new Apple(80,"green"),
                                               new Apple(155, "green"),
                                               new Apple(120, "red"));	
