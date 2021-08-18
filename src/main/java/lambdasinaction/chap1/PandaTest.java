@@ -7,4 +7,7 @@ package lambdasinaction.chap1;
  * @since 2021/8/2 11:04 上午
  */
 public class PandaTest {
+    public static void main(String[] args) {
+        
+    }
 }
